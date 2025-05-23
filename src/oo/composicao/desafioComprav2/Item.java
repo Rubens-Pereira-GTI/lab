@@ -5,13 +5,13 @@ public class Item {
     private Produto produto;
     private int quantidade; 
 
-    Item(String nomeProduto, int quantidade, double preco){        
+    public Item(String nomeProduto, int quantidade, double preco){        
         this.produto = new Produto(nomeProduto, preco);
         this.quantidade = quantidade;
         produto.addProduto(this);
     }
 
-    void setCompra(Compra compra){
+    public void setCompra(Compra compra){
         this.compra = compra;
     }
     Produto getProduto(){
