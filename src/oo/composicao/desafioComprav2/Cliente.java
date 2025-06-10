@@ -14,10 +14,16 @@ public class Cliente {
     }
 
     String getNome(){
+        
+        return nome;
+    }
+    
+    String setNome(String nome){
         return nome;
     }
 
     void addCompra(Compra compra){
+        System.out.println("meu resultado");
         listaCompra.add(compra);
     }
 

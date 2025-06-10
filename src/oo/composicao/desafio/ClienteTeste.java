@@ -1,15 +1,17 @@
 package oo.composicao.desafio;
-
+import oo.composicao.*;
 //neste pequeno projeto trabalharemos o conceito de relacionamento entre classes
 public class ClienteTeste {
     // o cliente pode efetuar várias compras no site
     //criar um cliente
     //criar duas compras
     // cada compra com dois itens
-    public static void main(String[] args) {
-
+    static void main(String[] args) {
+    Aluno a = new Aluno("r");
+     
         Cliente cliente = new Cliente("Rubens");
 
+        cliente.imprimirAlgo(cliente.nome);        
         //A compra tem uma lista de Itens
         Compra compra = new Compra(cliente);
         Compra compra2 = new Compra(cliente);

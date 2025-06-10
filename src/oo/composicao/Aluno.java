@@ -10,7 +10,7 @@ public class Aluno {
         }
     
     
-    Aluno(String nomeAluno){
+    public Aluno(String nomeAluno){
         nome = nomeAluno;
     }
 
