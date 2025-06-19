@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assetto Corsa Server Rentals - Alugue seu Servidor!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .server-plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .plan-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            min-width: 280px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+        .plan-card h3 {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .plan-card .price {
+            font-size: 2em;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .plan-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .plan-card ul li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .plan-card ul li::before {
+            content: '✓';
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assetto Corsa Server Rentals</h1>
+        <p>Acelere sua experiência de corrida com nossos servidores dedicados!</p>
+    </header>
+
+    <nav>
+        <a href="#planos">Planos</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Monte seu servidor de Assetto Corsa em minutos!</h2>
+            <p>Tenha controle total sobre suas sessões de corrida, escolha suas pistas, carros e regras. Perfeito para ligas e amigos!</p>
+            <a href="#planos" class="btn">Veja Nossos Planos</a>
+        </section>
+
+        <section id="planos">
+            <h2>Nossos Planos de Aluguel</h2>
+            <div class="server-plans">
+                <div class="plan-card">
+                    <h3>Plano Iniciante</h3>
+                    <div class="price">R$ 49,90<small>/mês</small></div>
+                    <ul>
+                        <li>8 Slots de Jogadores</li>
+                        <li>10 GB de Armazenamento</li>
+                        <li>Configuração Instantânea</li>
+                        <li>Suporte Básico</li>
+                    </ul>
+                    <a href="#" class="btn">Alugar Agora</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3>Plano Intermediário</h3>
+                    <div class="price">R$ 79,90<small>/mês</small></div>
+                    <ul>
+                        <li>16 Slots de Jogadores</li>
+                        <li>20 GB de Armazenamento</li>
+                        <li>Configuração Instantânea</li>
+                        <li>Suporte Prioritário</li>
+                        <li>Acesso FTP Completo</li>
+                    </ul>
+                    <a href="#" class="btn">Alugar Agora</a>
+                </div>
+
+                <div class="plan-card">
+                    <h3>Plano Profissional</h3>
+                    <div class="price">R$ 129,90<small>/mês</small></div>
+                    <ul>
+                        <li>32 Slots de Jogadores</li>
+                        <li>50 GB de Armazenamento</li>
+                        <li>Configuração Instantânea</li>
+                        <li>Suporte 24/7</li>
+                        <li>Acesso FTP Completo</li>
+                        <li>Proteção DDoS</li>
+                    </ul>
+                    <a href="#" class="btn">Alugar Agora</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="recursos">
+            <h2>Recursos Inclusos em Todos os Planos</h2>
+            <ul>
+                <li>Painel de Controle Intuitivo</li>
+                <li>Instalação de Mods Fácil</li>
+                <li>Backup Diário Automático</li>
+                <li>Baixa Latência (Datacenters no Brasil)</li>
+                <li>Monitoramento 24/7 do Servidor</li>
+                <li>Suporte Técnico Especializado</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="faq">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <details>
+                <summary>Como faço para alugar um servidor?</summary>
+                <p>É simples! Escolha seu plano, clique em "Alugar Agora" e siga os passos para o pagamento. Seu servidor estará online em poucos minutos.</p>
+            </details>
+            <details>
+                <summary>Posso instalar mods personalizados?</summary>
+                <p>Sim, todos os nossos planos permitem a instalação de mods. Oferecemos ferramentas para facilitar esse processo.</p>
+            </details>
+            <details>
+                <summary>Qual a latência dos servidores?</summary>
+                <p>Nossos servidores estão localizados em datacenters no Brasil, garantindo a menor latência possível para jogadores brasileiros.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida? Fale conosco!</p>
+            <form action="#" method="POST">
+                <p><label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;"></p>
+                
+                <p><label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;"></p>
+                
+                <p><label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea></p>
+                
+                <button type="submit" class="btn" style="width: auto; padding: 10px 20px; cursor: pointer;">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Assetto Corsa Server Rentals. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
