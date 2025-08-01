@@ -25,9 +25,11 @@ public class MinMax {
             // se for o mesmo numero retorna 0
             return 0;
         };
+
         System.out.println(alunos.stream().max(melhorNota));
         System.out.println(alunos.stream().max(melhorNota).get());
         System.out.println(alunos.stream().min(melhorNota).get());
+        
 
     }
 }
