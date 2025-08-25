@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CEFak</title>
+    <!-- Use o CDN do Tailwind CSS para o estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use a fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+    <!-- Main container for the login card -->
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden p-6 sm:p-8">
+        <!-- Login card header -->
+        <div class="flex flex-col items-center mb-6 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight">Login</h1>
+            <p class="mt-2 text-sm sm:text-base text-gray-600">
+                Entre na sua conta para acessar a dispensa CEFak.
+            </p>
+        </div>
+
+        <!-- Login form -->
+        <form id="login-form" class="space-y-6">
+            <!-- User input field -->
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700">Usuário</label>
+                <div class="mt-1">
+                    <input id="username" name="username" type="text" autocomplete="username" required
+                           class="appearance-none block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base">
+                </div>
+            </div>
+
+            <!-- Password input field -->
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+                <div class="mt-1">
+                    <input id="password" name="password" type="password" autocomplete="current-password" required
+                           class="appearance-none block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-base">
+                </div>
+            </div>
+
+            <!-- Forgot password link -->
+            <div class="flex items-center justify-between">
+                <div class="text-sm">
+                    <a href="#" class="font-medium text-blue-600 hover:text-blue-500 transition-colors">Esqueceu a senha?</a>
+                </div>
+            </div>
+
+            <!-- Login button -->
+            <div>
+                <button type="submit"
+                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                    Entrar
+                </button>
+            </div>
+        </form>
+
+        <!-- Message box for login status -->
+        <div id="message-box" class="mt-6 p-4 rounded-lg text-sm text-center hidden" role="alert"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('login-form');
+        const messageBox = document.getElementById('message-box');
+        
+        // Handle form submission
+        form.addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Simulate a login process
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Clear previous messages
+            messageBox.textContent = '';
+            messageBox.classList.add('hidden');
+            messageBox.classList.remove('bg-green-100', 'text-green-700', 'bg-red-100', 'text-red-700');
+
+            // Simple validation (can be more complex)
+            if (username === 'admin' && password === '123') {
+                // Success message
+                messageBox.textContent = 'Login bem-sucedido! Redirecionando...';
+                messageBox.classList.remove('hidden');
+                messageBox.classList.add('bg-green-100', 'text-green-700');
+                
+                // In a real app, you would redirect to the dashboard
+                setTimeout(() => {
+                    window.location.href = '#dashboard';
+                }, 2000);
+            } else {
+                // Error message
+                messageBox.textContent = 'Usuário ou senha incorretos. Por favor, tente novamente.';
+                messageBox.classList.remove('hidden');
+                messageBox.classList.add('bg-red-100', 'text-red-700');
+            }
+        });
+    </script>
+</body>
+</html>
