@@ -13,12 +13,12 @@ public class PredicadoComposicao {
 //utilize os códigos acima de maneira encadeada 
         System.out.println(isPar.and(isTresDigitos).test(121));
 // utilize o método negate para negar o códig de cima
-        System.out.println(isPar.and(isTresDigitos).negate().test(121));
+        System.out.println(isPar.and(isTresDigitos.negate()).negate().test(121));
 // utilize o operador lógico OU ao inves de E
         System.out.println(isPar.or(isTresDigitos).test(121));
 
         //como o predicate retorna um boolean só podemos encadear só podemos 
         //encadear funções que trabalhem com operadores lógicos. 
-
+        
     }
 }
