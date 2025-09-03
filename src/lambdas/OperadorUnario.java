@@ -13,6 +13,16 @@ public class OperadorUnario {
 
         System.out.println(maisDois.andThen(vezesDois).
             andThen(aoQuadrado).apply(2));
+
+        Boolean.parseBoolean("true");
+
+        boolean b = true;
+        Boolean a = b;
+        
+
+        String c = "true";
+        
+        a = c;
             
     }
 
