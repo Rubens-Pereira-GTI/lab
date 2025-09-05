@@ -3,6 +3,7 @@ package streams;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 public class MinMax {
 
@@ -29,6 +30,8 @@ public class MinMax {
         System.out.println(alunos.stream().max(melhorNota));
         System.out.println(alunos.stream().max(melhorNota).get());
         System.out.println(alunos.stream().min(melhorNota).get());
+        System.out.println(alunos.stream().min(melhorNota).get());
+        
         
 
     }

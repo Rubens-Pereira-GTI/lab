@@ -1,14 +1,14 @@
 package generics;
 
+import java.util.LinkedHashSet;
 import java.util.Optional;
 import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
 
 
 public class Pares<C extends Number, V> {
 
-    private final SortedSet<Par<C, V>> itens = new TreeSet<>();
+    
+    private final Set<Par<C, V>> itens = new LinkedHashSet<>();
 
     public void adicionar(C chave, V valor){        
        // se a chave for null saia do método
