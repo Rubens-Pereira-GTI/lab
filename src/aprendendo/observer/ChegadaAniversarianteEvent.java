@@ -6,8 +6,7 @@ public class ChegadaAniversarianteEvent {
     
     private final Date horaDaChegada;
     
-    public ChegadaAniversarianteEvent(Date horaDaChegada){
-        super();
+    public ChegadaAniversarianteEvent(Date horaDaChegada){        
         this.horaDaChegada = horaDaChegada;
     }
 
