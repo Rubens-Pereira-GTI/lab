@@ -1,4 +1,4 @@
-package aprendendo.observer;
+package observer;
 
 import java.util.Date;
 import java.util.ArrayList;
@@ -11,16 +11,18 @@ public class Porteiro extends Thread{
 
     public void addChegadaAniversarianteObserver(ChegadaAniversarianteObserver observer){
         this.observers.add(observer);
-    }
+        this.start();
+    } 
 
     
     @Override
     public void run(){
         
-        Scanner scan = new Scanner(System.in);
-        System.out.println("informe o codigo");
+        
 
         while(true){
+            Scanner scan = new Scanner(System.in);
+            System.out.println("informe o codigo");
             int valor = scan.nextInt();
 
             if(valor == 1){
@@ -31,8 +33,10 @@ public class Porteiro extends Thread{
             }
             }else{
                 System.out.println("Alarme falso");
+                scan.close();
             }
             
         }
+        
     }
 }

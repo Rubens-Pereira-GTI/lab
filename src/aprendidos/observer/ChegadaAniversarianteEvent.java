@@ -1,4 +1,4 @@
-package aprendendo.observer;
+package observer;
 
 import java.util.Date;
 

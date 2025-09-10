@@ -1,4 +1,4 @@
-package aprendendo.observer;
+package observer;
 
 public class Namorada implements ChegadaAniversarianteObserver{
 

@@ -1,4 +1,4 @@
-package aprendendo.observer;
+package observer;
 
 public class AniversarioSurpresa {
     
@@ -6,7 +6,7 @@ public class AniversarioSurpresa {
         Namorada eventObjectNamorada = new Namorada();
         Porteiro porteiro = new Porteiro();
 
-        porteiro.addChegadaAniversarianteObserver(eventObjectNamorada);
-        porteiro.start();
+        porteiro.addChegadaAniversarianteObserver(eventObjectNamorada);        
+        
     }
 }
