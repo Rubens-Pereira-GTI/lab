@@ -6,12 +6,10 @@ public class Dog extends Animal{
         System.out.println("correndo como um cachorro");
     }
 
-    public static void main(String[] args) {
-        Dog aDog = new Dog();
-
-        Animal aAnimal = aDog;
-
-        aAnimal.correr();
+    public void latir(){
+        System.out.println("uff, uff");
     }
+
+
 
 }

@@ -1,4 +1,4 @@
-package aprendendo.swingLab;
+package swingLab;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
