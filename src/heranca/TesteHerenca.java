@@ -6,5 +6,6 @@ public class TesteHerenca {
         Dog adog = new Dog();
         Animal aAnimal = adog;
         aAnimal.correr();
+
     }
 }

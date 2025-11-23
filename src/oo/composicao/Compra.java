@@ -8,6 +8,8 @@ public class Compra {
     ArrayList<Item> listaItens = new ArrayList<Item>();
 
     void adicionarItem(String nome, int qt, double valor){
+        Item item = new Item(nome, qt, valor);
+        item.compra=this;
         adicionarItem(new Item(nome, qt, valor));
     }
 

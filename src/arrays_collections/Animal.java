@@ -1,6 +1,6 @@
 package arrays_collections;
 
-public class Animal implements Comparable{
+public class Animal implements Comparable<Object>{
     String especie;
 
     public Animal(){
